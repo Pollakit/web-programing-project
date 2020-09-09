@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
+import Header from '../component/Header.jsx'
 
 class UserPage extends Component {
-{/*fvrvrv*/}
   render() {
 
     return (
         <React.Fragment>
-          <h1>hello world</h1> 
-          <h1>hello world</h1>
-          <h1>hello world</h1>
+          <Header text ={""} isDisplaySignUp={false} isDisplayRightButton={false}/>
+          <div>
+            <span class = "bar">
+              <span>
+                
+              </span>
+            </span>
+          </div>
         </React.Fragment>
     );
   }
