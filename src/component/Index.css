@@ -6,24 +6,29 @@
   font-family : Comfortaa;
 }
 
-.HeaderSpancingRight{
-  display:flex;
-  justify-content:space-between; 
-  width: 300px;
+.HeaderStyle{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid red;
 }
 
-.HeaderSpancingLeft{
-  display:flex;
-  justify-content:space-between; 
+.HeaderElementStyleLeft{
+  display: flex;
+  justify-content: space-between;
   width: 250px;
 }
 
-.TextStyle{
-  display:inline-block;
+.HeaderElementStyleRight{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.HeadeTextStyle{
   text-decoration: none;
   font-family : Comfortaa;
   color: black;
-  font-size: 200%;
   font-weight: bold;
-  margin-top: -25px;
+  font-size: 250%;
+  margin-top: -35px;
 }

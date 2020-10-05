@@ -15,19 +15,23 @@ class Header extends Component {
 
     return (
       <div >
-        <div style={{ borderBottom: "5px solid red;"} }>
-          <div className = "HeaderSpancingLeft">
-            <a href="#" > <img height="70" src={logo} /> </a>
+        <div className = "HeaderStyle">
 
-            <a  className = "TextStyle" href="#"> <p>job spot</p> </a> 
-          </div>
+              <span className="HeaderElementStyleLeft">
+                <a href="#" > <img height="70" src={logo} /> </a>
 
-          <div className = "HeaderSpancingRight">
-            { ( this.source[1] ) ? <a className = "TextStyle" href="#" > <p>Sign up</p> </a> : <a ></a> }
+                <a  href="#" className ="HeadeTextStyle"> <p >job spot</p> </a> 
+              </span>
+              
+              <span className="HeaderElementStyleRight" >
+                { ( this.source[1] ) ? <a href="#" className="HeadeTextStyle"> <p>Sign up</p> </a> : <a ></a> }
 
-            { (this.source[0] ) ? <Button name={ this.source[2] } size={[50,130]} textSize={25} />  : <a ></a>  }
-          </div>
+                { (this.source[0] ) ? <Button name={ this.source[2] } size={[50,130]} textSize={25} />  : <a ></a>  }
+              </span>
+
         </div>
+
+
       </div>
     );
   }
