@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import "./Index.css"
 
 
 class ButtonWithIcon extends Component{
-
     render() {
         const {text, size, textSize, imageUrl} = this.props;
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../component/Header.jsx'
 import ButtonWithIcon from '../component/ButtonWithIcon.jsx'
 import search_logo from '../image/search.png'
+import GreyBar from '../component/GreyBar.jsx'
 
 class UserPage extends Component {
   render() {
@@ -10,17 +11,9 @@ class UserPage extends Component {
         <React.Fragment>
           <Header text ={""} isDisplaySignUp={false} isDisplayRightButton={false}/>
           <div>
-            <span class = "bar">
-              {/* <span id = "findJob" class = "debug">
-                <img src = {search_logo} id = "searchLogo" width = "35" height = "35"></img>
-              </span>
-              <span>
-                <p class = "Standard-font-style" id = "findJobText">find job</p>
-              </span> */}
-              <ButtonWithIcon text={"find job"} imageUrl={search_logo}>
-                HelloTest.
-              </ButtonWithIcon>
-            </span>
+            <GreyBar>
+              <ButtonWithIcon text={"find job"} imageUrl={search_logo}></ButtonWithIcon>
+            </GreyBar>
           </div>
         </React.Fragment>
     );
