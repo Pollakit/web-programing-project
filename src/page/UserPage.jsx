@@ -3,6 +3,7 @@ import Header from '../component/Header.jsx'
 import ButtonWithIcon from '../component/ButtonWithIcon.jsx'
 import search_logo from '../image/search.png'
 import GreyBar from '../component/GreyBar.jsx'
+import share_image from '../image/share-post.png'
 
 class UserPage extends Component {
   render() {
@@ -13,8 +14,11 @@ class UserPage extends Component {
           <div>
             <GreyBar>
               <ButtonWithIcon text={"find job"} imageUrl={search_logo}></ButtonWithIcon>
+              <ButtonWithIcon text={"appled"} imageUrl={share_image}></ButtonWithIcon>
             </GreyBar>
           </div>
+          <h1 class="standard-font-style">Profile</h1>
+
         </React.Fragment>
     );
   }

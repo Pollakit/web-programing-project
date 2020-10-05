@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../image/logo.png'
-import Button from './Button.jsx'
-import './Index.css'
+import './Index.css';
 
 class GreyBar extends Component {
   render() {
