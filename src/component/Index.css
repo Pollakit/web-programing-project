@@ -1,24 +1,29 @@
-
-.Standard-font-style >th > a , .Standard-font-style > th > th > a{
-  display: flex;
-  text-decoration: none;
-  font-family : Comfortaa;
-  color: black;
-  font-size: 250%;
-}
-
-.Standard-font-style > th > th > a{
-  display: flex;
-  text-decoration: none;
-  font-family : Comfortaa;
-  color: black;
-  font-size: 250%;
-}
-
 .Standard-button{
   background-color: #FFC6AF;
   border: #FFC6AF;
   border-radius: 7px;
   color: white;
   font-family : Comfortaa;
+}
+
+.HeaderSpancingRight{
+  display:flex;
+  justify-content:space-between; 
+  width: 300px;
+}
+
+.HeaderSpancingLeft{
+  display:flex;
+  justify-content:space-between; 
+  width: 250px;
+}
+
+.TextStyle{
+  display:inline-block;
+  text-decoration: none;
+  font-family : Comfortaa;
+  color: black;
+  font-size: 200%;
+  font-weight: bold;
+  margin-top: -25px;
 }

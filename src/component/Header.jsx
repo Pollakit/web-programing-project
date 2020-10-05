@@ -14,46 +14,24 @@ class Header extends Component {
   render() {
 
     return (
-      <div>
-        <table>
-          <thead className = "Standard-font-style">
-            <th >
-              <th><h1>&nbsp;&nbsp;&nbsp;</h1></th>
+      <div >
+        <div style={{ borderBottom: "5px solid red;"} }>
+          <div className = "HeaderSpancingLeft">
+            <a href="#" > <img height="70" src={logo} /> </a>
 
-              <th> <a href="#" > <img height="70" src={logo} /> </a></th>
+            <a  className = "TextStyle" href="#"> <p>job spot</p> </a> 
+          </div>
 
-              <th> <a href="#" > <p>job spot</p> </a> </th>
-            </th>
+          <div className = "HeaderSpancingRight">
+            { ( this.source[1] ) ? <a className = "TextStyle" href="#" > <p>Sign up</p> </a> : <a ></a> }
 
-            <th style ={{position: 'absolute', right: 0}}>
-              { this.isDisplaySignUp( this.source[1] ) }
-
-              <th><h1>&nbsp;&nbsp;</h1></th>
-
-              { this.isDisplayRightButton( this.source[0] )}
-
-              {/*I promise I will fix this later*/}
-              <th><h1>&nbsp;&nbsp;&nbsp;&nbsp;</h1></th>
-            </th>
-          </thead>
-        </table>
-
-        <hr/>
-
+            { (this.source[0] ) ? <Button name={ this.source[2] } size={[50,130]} textSize={25} />  : <a ></a>  }
+          </div>
+        </div>
       </div>
     );
   }
 
-  isDisplaySignUp = ( isDisplay ) => {
-    return (isDisplay) ? <th> <a href="#" > <p>Sign up</p> </a> </th> : <th> <a > <p>&nbsp;</p> </a> </th>
-  }
-
-  isDisplayRightButton = ( isDisplay ) => {
-    return (isDisplay) ? <th> <Button name={ this.source[2] } size={[50,130]} textSize={25} /> </th> : <th> <a ></a> </th>
-  }
-
 }
-
-
 
 export default Header;
