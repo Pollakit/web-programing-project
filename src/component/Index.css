@@ -3,7 +3,7 @@
   text-decoration: none;
   font-family : Comfortaa;
   color: black;
-  font-size: 250%;
+  font-size: 250%;  
 }
 
 .Standard-font-style > th > th > a{
@@ -84,4 +84,22 @@
 
 .bottom-margin {
   margin-bottom: 50px;
+}
+
+.center-button {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  height: 50px;
+  font-size: 1.5em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
