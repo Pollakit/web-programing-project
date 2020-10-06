@@ -6,3 +6,28 @@
 	border-left: 15px solid #555;
 	border-bottom: 15px solid transparent;
 }
+
+.FindJobContainer{
+	display: flex;
+	justify-content: center;
+}
+
+.FindJobItemLeft{ 
+	display: flex;
+	flex-direction: column; 
+	margin-right: 100px;
+}
+
+.FindJobItemRight{ 
+	display: flex;
+	flex-direction: column; 
+	margin-left: 100px;
+}
+
+.ScrollerStyle{
+	height:120px;
+	width: 400px;
+	border: 1px solid #ccc;
+    font: 16px/26px Georgia, Garamond, Serif;
+	overflow: auto;
+}
