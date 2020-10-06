@@ -4,6 +4,7 @@ import ButtonWithIcon from '../component/ButtonWithIcon.jsx'
 import search_logo from '../image/search.png'
 import GreyBar from '../component/GreyBar.jsx'
 import share_image from '../image/share-post.png'
+import ProfileContainer from '../component/ProfileContainer.jsx'
 
 class UserPage extends Component {
   render() {
@@ -17,8 +18,9 @@ class UserPage extends Component {
               <ButtonWithIcon text={"appled"} imageUrl={share_image}></ButtonWithIcon>
             </GreyBar>
           </div>
-          <h1 class="standard-font-style">Profile</h1>
-
+          <h1 class="standard-font-style align-text-center temp-font-size">Profile</h1>
+          <ProfileContainer upper={true}></ProfileContainer>
+          <ProfileContainer upper={false}></ProfileContainer>
         </React.Fragment>
     );
   }

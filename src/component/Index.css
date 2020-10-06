@@ -31,7 +31,7 @@
   /* padding: 5px; */
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 60px;
   left: 0px;
   /* top: 93px; */
   background: #F7F7F7;
@@ -58,4 +58,30 @@
   margin-right: 5px;
   font-size: 1.5em;
   
+}
+
+.align-text-center {
+  text-align: center; 
+}
+
+.temp-font-size {
+  font-size: 250%;
+}
+
+.profile-container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+}
+
+.upper {
+  height: 500px;
+}
+
+.lower {
+  height: 368px;
+}
+
+.bottom-margin {
+  margin-bottom: 50px;
 }
