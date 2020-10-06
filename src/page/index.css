@@ -12,22 +12,26 @@
 	justify-content: center;
 }
 
-.FindJobItemLeft{ 
+.FindJobItem{ 
 	display: flex;
 	flex-direction: column; 
-	margin-right: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
-.FindJobItemRight{ 
-	display: flex;
-	flex-direction: column; 
-	margin-left: 100px;
-}
-
-.ScrollerStyle{
-	height:120px;
+.ScrollerStyleLeft{
+	height: 480px;
 	width: 400px;
+	overflow: auto;
 	border: 1px solid #ccc;
     font: 16px/26px Georgia, Garamond, Serif;
-	overflow: auto;
 }
+
+.ScrollerStyRight{
+	height: 480px;
+	width: 1000px;
+	overflow: auto;
+	border: 1px solid #ccc;
+    font: 16px/26px Georgia, Garamond, Serif;
+}
+

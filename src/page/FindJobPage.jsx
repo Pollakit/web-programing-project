@@ -7,16 +7,31 @@ class FindJobPage extends Component {
   render() {
     return (
         <div>
-            <Header text ={"Login"} isDisplaySignUp={true} isDisplayRightButton={true}/>
+            <Header text ={"Login"} isDisplaySignUp={ false } isDisplayRightButton={true}/>
+
+            <span style = {{borderBottom: '5px solid red', 
+                              display: 'flex',
+                              flexDirection: 'row',
+                              justifyContent: 'center',
+                              height: '70px'
+                            }}>
+                  <input type="text" />
+              </span>
+
+              <span style = {{borderBottom: '3px solid red', 
+                              display: 'flex',
+                              flexDirection: 'row',
+                              justifyContent: 'felx-start',
+                              height: '60px'
+                            }}>
+                  <input type="text" />
+              </span>
             
             <span className="FindJobContainer">
-              
-              <div className="FindJobItemLeft">
 
-                <lapel>Left</lapel>
-                <input type = "text" />
+              <div className="FindJobItem">
 
-                <div className = "ScrollerStyle">
+                <div className = "ScrollerStyleLeft">
 
                     As you can see, once there's enough text in this box, the box will grow scroll 
                     bars... that's why we call it a 
@@ -32,11 +47,9 @@ class FindJobPage extends Component {
                 </div>
               </div>
 
-              <div className="FindJobItemRight">
-                <lapel>Right</lapel>
-                <input type = "text" />
+              <div className="FindJobItem">
 
-                <div className = "ScrollerStyle">
+                <div className = "ScrollerStyRight">
 
                     As you can see, once there's enough text in this box, the box will grow scroll 
                     bars... that's why we call it a 

@@ -9,7 +9,7 @@
 .HeaderStyle{
   display: flex;
   justify-content: space-between;
-  border-bottom: 5px solid red;
+  border-bottom: 1px solid red;
 }
 
 .HeaderElementStyleLeft{
