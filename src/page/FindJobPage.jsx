@@ -24,12 +24,13 @@ class FindJobPage extends Component {
                               justifyContent: 'felx-start',
                               height: '60px'
                             }}>
+
                   <input type="text" />
               </span>
             
             <span className="FindJobContainer">
 
-              <div className="FindJobItem">
+              <div className="FindJobItemLeft">
 
                 <div className = "ScrollerStyleLeft">
 
