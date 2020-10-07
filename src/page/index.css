@@ -15,17 +15,18 @@
 .FindJobItemLeft{ 
 	display: flex;
 	flex-direction: column; 
-	width: 40%;
+	width: 50%;
 }
 
 .FindJobItemRight{ 
 	display: flex;
 	flex-direction: column; 
-	width: 60%;
+	width: 70%;
 }
 
 .ScrollerStyleLeft{
 	height: 480px;
+	width: 100%;
 	overflow: auto;
 	border: 1px solid #ccc;
     font: 16px/26px Georgia, Garamond, Serif;

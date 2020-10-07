@@ -10,18 +10,23 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid red;
+  height: 80px;
+  width: 100%;
+  align-items: center;
 }
 
 .HeaderElementStyleLeft{
   display: flex;
   justify-content: space-between;
-  width: 250px;
+  width: 15%;
+  align-items: center;
 }
 
 .HeaderElementStyleRight{
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 17%;
+  align-items: center;
 }
 
 .HeadeTextStyle{
@@ -29,6 +34,5 @@
   font-family : Comfortaa;
   color: black;
   font-weight: bold;
-  font-size: 250%;
-  margin-top: -35px;
+  font-size: 200%;
 }

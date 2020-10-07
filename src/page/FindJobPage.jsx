@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../component/Header.jsx';
+import SearchBar from '../component/SearchBar.jsx';
 import './index.css';
 
 class FindJobPage extends Component {
@@ -7,24 +8,25 @@ class FindJobPage extends Component {
   render() {
     return (
         <div>
-            <Header text ={"Login"} isDisplaySignUp={ false } isDisplayRightButton={true}/>
+            <Header text ={"Login"} isDisplaySignUp={ true } isDisplayRightButton={true}/>
 
-            <span style = {{borderBottom: '5px solid red', 
+            <span style = {{borderBottom: '10px solid red', 
                               display: 'flex',
                               flexDirection: 'row',
                               justifyContent: 'center',
-                              height: '70px'
+                              alignItems: 'center'
                             }}>
-                  <input type="text" />
+
+                  <SearchBar />
               </span>
 
-              <span style = {{borderBottom: '3px solid red', 
+              <span style = {{ 
                               display: 'flex',
                               flexDirection: 'row',
                               justifyContent: 'felx-start',
                               height: '60px'
                             }}>
-
+                  
                   <input type="text" />
               </span>
             
