@@ -12,16 +12,20 @@
 	justify-content: center;
 }
 
-.FindJobItem{ 
+.FindJobItemLeft{ 
 	display: flex;
 	flex-direction: column; 
-	margin-top: 10px;
-	margin-left: 10px;
+	width: 40%;
+}
+
+.FindJobItemRight{ 
+	display: flex;
+	flex-direction: column; 
+	width: 60%;
 }
 
 .ScrollerStyleLeft{
 	height: 480px;
-	width: 400px;
 	overflow: auto;
 	border: 1px solid #ccc;
     font: 16px/26px Georgia, Garamond, Serif;
@@ -29,7 +33,7 @@
 
 .ScrollerStyRight{
 	height: 480px;
-	width: 1000px;
+	width: 100%;
 	overflow: auto;
 	border: 1px solid #ccc;
     font: 16px/26px Georgia, Garamond, Serif;
