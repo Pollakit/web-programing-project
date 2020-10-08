@@ -4,7 +4,7 @@ import './Index.css';
 class GreyBar extends Component {
   render() {
     return (
-      <span class="bar">
+      <span className="bar">
         {this.props.children}
       </span>
     );

@@ -7,9 +7,11 @@ class ResponsiveStandardButton extends Component {
     const {text, textSize} = this.props;
 
     return (
-      <button className="Standard-button center-button">
-      <p>{text}</p>
-    </button>
+      <div>
+        <button className="Standard-button center-button">
+        {text}
+        </button>
+      </div>
     );
   }
 

@@ -9,10 +9,10 @@ class ButtonWithIcon extends Component{
         const {text, size, textSize, imageUrl} = this.props;
 
         return (
-            <button class="buttonWithIcon">
+            <button className="buttonWithIcon">
                 <span>
                     <img src={imageUrl} width="35" height = "35"></img>
-                    <span class="buttonWithIconText standard-font-style">{text}</span>
+                    <span className="buttonWithIconText standard-font-style">{text}</span>
                 </span>
             </button>
         );
