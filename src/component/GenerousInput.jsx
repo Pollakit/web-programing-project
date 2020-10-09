@@ -1,37 +1,70 @@
 import React, { Component } from "react";
+import CreateNormalInput from "./GenerousInput.jsx";
+import CreateTextAreaInput from "./GenerousInput.jsx";
+import CreateInput from "./GenerousInput.jsx";
 
 class GenerousInput extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
-    const { inputName, inputType } = this.props;
+    let inputName = this.props.input.inputName;
+    let inputType = this.props.input.inputType;
+    let trimmedInputName = inputName.split(" ").join("");
 
     return (
       <div>
-        <label htmlFor={inputName}>{inputName}</label>
+        <label htmlFor={trimmedInputName}>{inputName}</label>
         <input type={inputType} name={inputName} />
       </div>
     );
   }
-
-  // CreateInput(props) {
-  //   if (inputType != "textarea") {
-  //     <CreateNormalInput></CreateNormalInput>;
-  //   }
-  // }
-
-  // CreateNormalInput(props) {
-  //   const { inputName, inputType } = this.props;
-
-  //   return (
-  //     <div>
-  //       <label htmlFor={inputName}>{inputName}</label>
-  //       <input type={inputType} name={inputName} />
-  //     </div>
-  //   );
-  // }
-
-  // CreateTextAreaInput(props) {
-  //   <textarea id=""></textarea>;
-  // }
 }
 
 export default GenerousInput;
+
+// CreateInput(props) {
+//   let inputName = this.input.inputName;
+//   let inputType = this.input.inputType;
+
+//   if (inputType != "textarea") {
+//     console.log("Not creating textarea");
+//     return <CreateNormalInput />;
+//   } else {
+//     console.log("Creating Textarea");
+//     return <CreateTextAreaInput />;
+//   }
+// }
+
+// CreateNormalInput(props) {
+//   let inputName = this.input.inputName;
+//   let inputType = this.input.inputType;
+//   let trimmedInputName = inputName.split(" ").join("");
+
+//   return (
+//     <div>
+//       <label htmlFor={trimmedInputName}>{inputName}</label>
+//       <input type={inputType} name={inputName} />
+//     </div>
+//   );
+// }
+
+// CreateTextAreaInput(props) {
+//   let inputName = this.input.inputName;
+//   let trimmedInputName = inputName.split(" ").join("");
+//   let inputRows = this.input.inputRows;
+//   let inputCols = this.input.inputCols;
+
+//   return (
+//     <div>
+//       <label htmlFor={trimmedInputName}> {inputName} </label>
+
+//       <textarea
+//         id={trimmedInputName}
+//         name={trimmedInputName}
+//         rows={inputRows}
+//         cols={inputCols}
+//       ></textarea>
+//     </div>
+//   );
+// }

@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import logo from "../image/logo.png";
-import Button from "./Button.jsx";
 import "./Index.css";
 import GenerousInput from "./GenerousInput.jsx";
 
@@ -12,10 +10,7 @@ class DynamicForm extends Component {
     return (
       <div>
         {inputLists.map((input, index) => (
-          <GenerousInput
-            inputName={input.inputName}
-            inputType={input.inputType}
-          ></GenerousInput>
+          <GenerousInput input={input} />
         ))}
         <div className="vertical-spacer"></div>
       </div>

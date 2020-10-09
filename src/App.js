@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './component/Header.jsx'
+import FindJobPage from './page/FindJobPage.jsx'
 
 function App() {
   return (
     <div className="App">
-      <Header text ={"Login"} isDisplaySignUp={true} isDisplayRightButton={true}/>
+      <FindJobPage text ={"Login"} isDisplaySignUp={true} isDisplayRightButton={true}/>
     </div>
   );
 }

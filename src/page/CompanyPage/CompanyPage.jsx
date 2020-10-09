@@ -7,6 +7,7 @@ import share_image from "../../image/share-post.png";
 import ProfileContainer from "../../component/ProfileContainer.jsx";
 import ResponsiveStandardButton from "../../component/ResponsiveStandardButton.jsx";
 import DynamicForm from "../../component/DynamicForm.jsx";
+import TextAreaInput from "../../component/TextAreaInput.jsx";
 import "./CompanyPage.css";
 
 class CompanyPage extends Component {
@@ -27,8 +28,8 @@ class CompanyPage extends Component {
         {
           inputName: "Company description",
           inputType: "textarea",
-          rows: "5",
-          cols: "5",
+          rows: "35",
+          cols: "35",
         },
       ],
     };
@@ -59,7 +60,7 @@ class CompanyPage extends Component {
           <DynamicForm inputs={companyInfoFields}></DynamicForm>
         </ProfileContainer>
         <ProfileContainer upper={false}>
-          <DynamicForm inputs={companyInfoFields}></DynamicForm>
+          
         </ProfileContainer>
         <ResponsiveStandardButton text={"SAVE"}></ResponsiveStandardButton>
       </React.Fragment>
