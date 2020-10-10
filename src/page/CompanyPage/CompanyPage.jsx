@@ -20,7 +20,7 @@ class CompanyPage extends Component {
         { inputName: "Email", inputType: "text" },
         { inputName: "Password", inputType: "text" },
         { inputName: "Industry Field", inputType: "text" },
-      ],
+      ], "inputClassification": "normal-input",
     };
 
     let companyDescriptionField = {
@@ -31,7 +31,7 @@ class CompanyPage extends Component {
           rows: "35",
           cols: "35",
         },
-      ],
+      ], "inputClassification": "text-area"
     };
 
     return (
@@ -44,11 +44,7 @@ class CompanyPage extends Component {
         <div>
           <GreyBar>
             <ButtonWithIcon
-              text={"find job"}
-              imageUrl={search_logo}
-            ></ButtonWithIcon>
-            <ButtonWithIcon
-              text={"appled"}
+              text={"job posted"}
               imageUrl={share_image}
             ></ButtonWithIcon>
           </GreyBar>
@@ -60,7 +56,7 @@ class CompanyPage extends Component {
           <DynamicForm inputs={companyInfoFields}></DynamicForm>
         </ProfileContainer>
         <ProfileContainer upper={false}>
-          
+        <DynamicForm inputs={companyDescriptionField}></DynamicForm>
         </ProfileContainer>
         <ResponsiveStandardButton text={"SAVE"}></ResponsiveStandardButton>
       </React.Fragment>

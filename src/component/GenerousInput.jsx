@@ -8,14 +8,15 @@ class GenerousInput extends Component {
     super(props);
   }
   render() {
-    let inputName = this.props.input.inputName;
-    let inputType = this.props.input.inputType;
+    const { input } = this.props;
+    let inputName = input.inputName;
+    let inputType = input.inputType;
     let trimmedInputName = inputName.split(" ").join("");
 
     return (
       <div>
         <label htmlFor={trimmedInputName}>{inputName}</label>
-        <input type={inputType} name={inputName} />
+        <input type={inputType} name={inputName} className="input" />
       </div>
     );
   }
