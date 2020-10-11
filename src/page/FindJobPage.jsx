@@ -10,12 +10,7 @@ class FindJobPage extends Component {
         <div>
             <Header text ={"Login"} isDisplaySignUp={ true } isDisplayRightButton={true}/>
 
-            <span style = {{borderBottom: '10px solid red', 
-                              display: 'flex',
-                              flexDirection: 'row',
-                              justifyContent: 'center',
-                              alignItems: 'center'
-                            }}>
+            <span className="SearchBarContainerMain">
 
                   <SearchBar />
               </span>

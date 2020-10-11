@@ -9,10 +9,10 @@ class SearchBar extends Component {
   render() {
 
     return (
-        <span style={{display: 'flex', justifyContent: "space-between", width: '70%', alignItems: 'center'}}>
+        <span className="SearchBarContainer">
             <h1>Description</h1>
 
-            <input type="text" style={{width:'70%', height:'30px'}}/>
+            <input type="text" className="SearchBarStyle" />
 
             <Button name={ "Seacrh" } size={[40,120]} textSize={25} /> 
         </span>
