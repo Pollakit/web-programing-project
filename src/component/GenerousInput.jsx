@@ -8,15 +8,30 @@ class GenerousInput extends Component {
     super(props);
   }
   render() {
-    let inputName = this.props.input.inputName;
-    let inputType = this.props.input.inputType;
+    const { input } = this.props;
+    let inputName = input.inputName;
+    let inputType = input.inputType;
     let trimmedInputName = inputName.split(" ").join("");
+    let createdInput;
+
+    if(inputType != "textarea") {
+      createdInput = (<div>
+                        <label htmlFor={trimmedInputName}>{inputName}</label>
+                        <input type={inputType} name={inputName} className="input" />
+                      </div>)
+    } else {
+      createdInput = (<div>
+                        <label htmlFor={trimmedInputName} className="text-area-label"> {inputName} </label>
+
+                        <textarea className="input"
+                          id={trimmedInputName}
+                          name={trimmedInputName}
+                        ></textarea>
+                      </div>)
+    }
 
     return (
-      <div>
-        <label htmlFor={trimmedInputName}>{inputName}</label>
-        <input type={inputType} name={inputName} />
-      </div>
+      createdInput
     );
   }
 }

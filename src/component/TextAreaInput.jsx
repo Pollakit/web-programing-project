@@ -1,27 +1,28 @@
 import React, { Component } from "react";
 
-class GenerousInput extends Component {
-  constructor(props) {
-    super(props);
-  }
+class TextAreaInput extends Component {
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
-      let inputName = this.input.inputName;
-  let trimmedInputName = inputName.split(" ").join("");
-  let inputRows = this.input.inputRows;
-  let inputCols = this.input.inputCols;
+    const {input} = this.props;
+    let inputName = input.inputName;
+    let trimmedInputName = inputName.split(" ").join("");
+    let inputRows = input.inputRows;
+    let inputCols = input.inputCols;
 
-  return (
-    <div>
-      <label htmlFor={trimmedInputName}> {inputName} </label>
+    return (
+      <div>
+        <label htmlFor={trimmedInputName} className="text-area-label"> {inputName} </label>
 
-      <textarea
-        id={trimmedInputName}
-        name={trimmedInputName}
-        rows={inputRows}
-        cols={inputCols}
-      ></textarea>
-    </div>
+        <textarea className="input"
+          id={trimmedInputName}
+          name={trimmedInputName}
+          rows={inputRows}
+          cols={inputCols}
+        ></textarea>
+      </div>
   );
 
     // return (
@@ -33,4 +34,4 @@ class GenerousInput extends Component {
   }
 }
 
-export default GenerousInput;
+export default TextAreaInput;
