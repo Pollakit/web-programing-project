@@ -1,26 +1,22 @@
 import React, { Component } from "react";
 import Header from "../../component/Header.jsx";
 import ButtonWithIcon from "../../component/ButtonWithIcon.jsx";
-import search_logo from "../../image/search.png";
 import GreyBar from "../../component/GreyBar.jsx";
 import share_image from "../../image/share-post.png";
 import ProfileContainer from "../../component/ProfileContainer.jsx";
 import ResponsiveStandardButton from "../../component/ResponsiveStandardButton.jsx";
 import DynamicForm from "../../component/DynamicForm.jsx";
-import TextAreaInput from "../../component/TextAreaInput.jsx";
-import "./CompanyPage.css";
+import "./CreateJobPage.css";
 
-class CompanyPage extends Component {
+class CreateJobPage extends Component {
   render() {
-    let companyInfoFields = {
+    let jobDetails = {
       inputLists: [
-        { inputName: "Company name", inputType: "text" },
-        { inputName: "Website", inputType: "text" },
+        { inputName: "Job title", inputType: "text" },
+        { inputName: "Location", inputType: "text" },
         { inputName: "Telephone", inputType: "text" },
-        { inputName: "Email", inputType: "text" },
-        { inputName: "Password", inputType: "text" },
-        { inputName: "Industry Field", inputType: "text" },
-      ], "inputClassification": "normal-input",
+        { inputName: "Job Detail", inputType: "textarea" },
+      ]
     };
 
     let companyDescriptionField = {
@@ -28,10 +24,8 @@ class CompanyPage extends Component {
         {
           inputName: "Company description",
           inputType: "textarea",
-          rows: "35",
-          cols: "35",
         },
-      ], "inputClassification": "text-area"
+      ]
     };
 
     return (
@@ -53,7 +47,7 @@ class CompanyPage extends Component {
           Company Profile
         </h1>
         <ProfileContainer upper={true}>
-          <DynamicForm inputs={companyInfoFields}></DynamicForm>
+          <DynamicForm inputs={jobDetails}></DynamicForm>
         </ProfileContainer>
         <ProfileContainer upper={false}>
         <DynamicForm inputs={companyDescriptionField}></DynamicForm>
@@ -64,4 +58,4 @@ class CompanyPage extends Component {
   }
 }
 
-export default CompanyPage;
+export default CreateJobPage;
