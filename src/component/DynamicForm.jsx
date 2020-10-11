@@ -7,24 +7,26 @@ class DynamicForm extends Component {
   render() {
     const { inputs } = this.props;
     let inputLists = inputs.inputLists;
-    let inputClassification = inputs.inputClassification;
-    let createdInput;
+    let createdInputs;
 
-    if (inputClassification == "normal-input") {
-      createdInput = inputLists.map((input, index) => (
-            <GenerousInput input={input} />
-          ))
-    } else {
-      createdInput = inputLists.map((input, index) => (
-        <TextAreaInput input={input} />
-      ))
-    }
+    // if (inputClassification == "normal-input") {
+    //   createdInputs = inputLists.map((input, index) => (
+    //         <GenerousInput input={input} />
+    //       ))
+    // } else {
+    //   createdInputs = inputLists.map((input, index) => (
+    //     <TextAreaInput input={input} />
+    //   ))
+    // }
 
-
+    createdInputs = inputLists.map((input, index) => (
+              <GenerousInput input={input} />
+            ))
+            
     return (
       <div>
         {
-          createdInput
+          createdInputs
         }
         <div className="vertical-spacer"></div>
       </div>
