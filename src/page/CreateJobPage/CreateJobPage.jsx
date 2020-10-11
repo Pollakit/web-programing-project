@@ -10,14 +10,12 @@ import "./CreateJobPage.css";
 
 class CreateJobPage extends Component {
   render() {
-    let companyInfoFields = {
+    let jobDetails = {
       inputLists: [
-        { inputName: "Company name", inputType: "text" },
-        { inputName: "Website", inputType: "text" },
+        { inputName: "Job title", inputType: "text" },
+        { inputName: "Location", inputType: "text" },
         { inputName: "Telephone", inputType: "text" },
-        { inputName: "Email", inputType: "text" },
-        { inputName: "Password", inputType: "text" },
-        { inputName: "Industry Field", inputType: "text" },
+        { inputName: "Job Detail", inputType: "textarea" },
       ]
     };
 
@@ -49,7 +47,7 @@ class CreateJobPage extends Component {
           Company Profile
         </h1>
         <ProfileContainer upper={true}>
-          <DynamicForm inputs={companyInfoFields}></DynamicForm>
+          <DynamicForm inputs={jobDetails}></DynamicForm>
         </ProfileContainer>
         <ProfileContainer upper={false}>
         <DynamicForm inputs={companyDescriptionField}></DynamicForm>
