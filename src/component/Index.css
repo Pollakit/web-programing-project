@@ -1,13 +1,3 @@
-.Standard-font-style > th > a,
-.Standard-font-style > th > th > a {
-  display: flex;
-  text-decoration: none;
-  font-family: Comfortaa;
-  color: black;
-  font-size: 250%;
-  margin-top: -35px;
-}
-
 .Standard-button {
   background-color: #ffc6af;
   border: #ffc6af;
@@ -19,23 +9,22 @@
 .HeaderStyle {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid  #ffc6af;
   height: 80px;
-
   align-items: center;
 }
 
 .HeaderElementStyleLeft {
   display: flex;
   justify-content: space-between;
-  width: 17%;
+  width: 21%;
   align-items: center;
 }
 
 .HeaderElementStyleRight {
   display: flex;
   justify-content: space-between;
-  width: 20%;
+  width: 24%;
   align-items: center;
 }
 
@@ -58,4 +47,18 @@
   border-radius: 7px;
   color: white;
   font-family: Comfortaa;
+}
+
+.SearchBarContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.SearchBarStyle{
+  width:70%;
+  height: 30px;
+  border-style: solid;
+  border-color: #ffc6af;
 }

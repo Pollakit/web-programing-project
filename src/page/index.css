@@ -40,3 +40,7 @@
     font: 16px/26px Georgia, Garamond, Serif;
 }
 
+.SearchBarContainerMain{
+	border-Bottom: 10px solid #ffc6af;
+	display: flex;
+}
