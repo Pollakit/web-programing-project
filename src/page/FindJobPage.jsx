@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../component/Header.jsx';
 import SearchBar from '../component/SearchBar.jsx';
+import DroupBox from '../component/DroupBox.jsx'
 import './index.css';
 
 class FindJobPage extends Component {
@@ -11,7 +12,6 @@ class FindJobPage extends Component {
             <Header text ={"Login"} isDisplaySignUp={ true } isDisplayRightButton={true}/>
 
             <span className="SearchBarContainerMain">
-
                   <SearchBar />
               </span>
 
@@ -22,9 +22,9 @@ class FindJobPage extends Component {
                               height: '60px'
                             }}>
                   
-                  <input type="text" />
+                <DroupBox />    
               </span>
-            
+              
             <span className="FindJobContainer">
 
               <div className="FindJobItemLeft">
