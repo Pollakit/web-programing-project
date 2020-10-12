@@ -6,7 +6,9 @@ import share_image from "../../image/share-post.png";
 import ProfileContainer from "../../component/ProfileContainer.jsx";
 import ResponsiveStandardButton from "../../component/ResponsiveStandardButton.jsx";
 import DynamicForm from "../../component/DynamicForm.jsx";
+import DynamicInput from "../../component/DynamicInput.jsx";
 import "./CreateJobPage.css";
+
 
 class CreateJobPage extends Component {
   render() {
@@ -44,13 +46,13 @@ class CreateJobPage extends Component {
           </GreyBar>
         </div>
         <h1 className="standard-font-style align-text-center temp-font-size">
-          Company Profile
+          Create Job
         </h1>
         <ProfileContainer upper={true}>
-          <DynamicForm inputs={jobDetails}></DynamicForm>
+          <DynamicForm inputs={jobDetails} />
         </ProfileContainer>
         <ProfileContainer upper={false}>
-        <DynamicForm inputs={companyDescriptionField}></DynamicForm>
+          <DynamicInput tag={"Tag"}/>
         </ProfileContainer>
         <ResponsiveStandardButton text={"SAVE"}></ResponsiveStandardButton>
       </React.Fragment>

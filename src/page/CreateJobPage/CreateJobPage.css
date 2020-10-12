@@ -96,3 +96,16 @@ textarea.input {
 .text-area-label {
   vertical-align: top;
 }
+
+.dynamic-input-container {
+  display: flex;
+}
+
+.dynamic-input-container-parent {
+  display: flex;
+  align-items: flex-start;
+}
+
+.addButton {
+  border-radius: 8px;
+}
