@@ -3,10 +3,12 @@ import React, { Component } from "react";
 class Input extends React.Component {
     constructor(props) {
         super(props);
-        const element = <input type="text" onKeyDown={this._handleEnter.bind(this) }
+        const inputElement = <input type="text" onKeyDown={this._handleEnter.bind(this) }
                             onChange={this._handleOnChange.bind(this)}/>
+        const textElement = <p></p>
+        
         this.state = {
-            element: element,
+            element: inputElement,
             value: '',
         }
     }
@@ -16,15 +18,12 @@ class Input extends React.Component {
 
     _handleEnter = (e) => {
         if (e.key === 'Enter') {
-          console.log(this.state.element.value);
+          console.log(this.state.value);
         }
     
     }
 
     _handleOnChange = (e) => {
-        let value = e.target.value;
-        console.log("Value: " + value);
-        
         this.setState({
             value: e.target.value
         });
