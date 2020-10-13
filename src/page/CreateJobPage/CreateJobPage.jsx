@@ -4,10 +4,11 @@ import ButtonWithIcon from "../../component/ButtonWithIcon.jsx";
 import GreyBar from "../../component/GreyBar.jsx";
 import share_image from "../../image/share-post.png";
 import ProfileContainer from "../../component/ProfileContainer.jsx";
-import ResponsiveStandardButton from "../../component/ResponsiveStandardButton.jsx";
 import DynamicForm from "../../component/DynamicForm.jsx";
 import DynamicInput from "../../component/DynamicInput.jsx";
+import Button from "../../component/Button.jsx";
 import "./CreateJobPage.css";
+
 
 
 class CreateJobPage extends Component {
@@ -18,15 +19,6 @@ class CreateJobPage extends Component {
         { inputName: "Location", inputType: "text" },
         { inputName: "Telephone", inputType: "text" },
         { inputName: "Job Detail", inputType: "textarea" },
-      ]
-    };
-
-    let companyDescriptionField = {
-      inputLists: [
-        {
-          inputName: "Company description",
-          inputType: "textarea",
-        },
       ]
     };
 
@@ -54,7 +46,10 @@ class CreateJobPage extends Component {
         <ProfileContainer upper={false}>
           <DynamicInput tag={"Tag"}/>
         </ProfileContainer>
-        <ResponsiveStandardButton text={"SAVE"}></ResponsiveStandardButton>
+        <div className="button-container">
+          <Button name="Create" size={[52, 435]} textSize={29}/>
+          <Button name="Cancel" size={[52, 353]} textSize={29}/>
+        </div>
       </React.Fragment>
     );
   }
