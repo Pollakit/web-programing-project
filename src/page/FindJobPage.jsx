@@ -3,6 +3,8 @@ import Header from '../component/Header.jsx';
 import SearchBar from '../component/SearchBar.jsx';
 import DropBox from '../component/DropBox.jsx';
 import CompanyCard from '../component/CompanyCard.jsx';
+import CompanyCard2 from '../component/CompanyCard2.jsx';
+import CompanyDesciption from '../component/CompanyDescription.jsx';
 
 import shopeLogo from '../image/ShopeeLogo.png';
 import LineLogo from '../image/LineLogo.jpg';
@@ -16,15 +18,15 @@ class FindJobPage extends Component {
     this.state = {
       DropBox: [
         { cotenetName: `JobTitle▼`,
-          dropItems : ['1','2','3','4','5']
+          dropItems : ['1','2','3','4']
         },
         {
           cotenetName: `Location▼`,
-          dropItems : ['1','2','3','4','5']
+          dropItems : ['1','2','3']
         },
         {
           cotenetName: `Company▼`,
-          dropItems : ['1','2','3','4','5']
+          dropItems : ['1','2','3','4','5','6']
         }
 
       ],
@@ -54,8 +56,13 @@ class FindJobPage extends Component {
           company : 'Google',
           location : 'Bangkok, Bangkok city Thailand'
         }
+      ],
+      CompanyCard2:[
+        {
+          logo: shopeLogo,
+          companyName: 'Shopee'
+        }
 
- 
       ]
     }
   }
@@ -100,21 +107,27 @@ class FindJobPage extends Component {
                 </div>
               </div>
 
-              <div className="FindJobItem">
+              <div className="FindJobItemRight">
 
                 <div className = "ScrollerStyRight">
 
-                    As you can see, once there's enough text in this box, the box will grow scroll 
-                    bars... that's why we call it a 
-                    scroll box! You could also place an image into 
-                    the scroll box.asdfasdfasdfasdfadsfaadsfadfaqerq
-                    aasdfadfafdafdadfadfadsf
-                    asdfasdfasdfasdfadsfaadsfadfaqerqa
-                    asdfasdfasdfasdfadsfaadsfadfaqerqadfadfa
-                    aasdfadfafdafdadfadfadsfadf
-                    asdfasdfasdfasdfadsfaadsfadfaqerqadfadfaa
-                    asdfasdfasdfasdfadsfaadsfadfaqerqadfadfaa
-                    adfadfasdf
+                    <div className="CompanyCardFindJobPageContainer2"> 
+                        <CompanyCard2
+                          logo ={ this.state.CompanyCard2[0].logo } 
+                          height = { '100px' }
+                          width = { '130px' }
+                          jobTitle = { 'Assoiate Business Analyst' }
+                          company = { this.state.CompanyCard2[0].companyName  }
+                          location = { 'Bangkok, Bangkok city Thailand' }
+                        /> 
+                      </div>
+
+                      <div className="CompanyCardFindJobPageContainer2"> 
+                        <CompanyDesciption
+                          detail = {"some thing very long about the job description"}
+                        /> 
+                      </div>
+
                   </div>
                 
               </div>

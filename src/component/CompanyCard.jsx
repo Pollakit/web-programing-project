@@ -1,4 +1,5 @@
 import React from 'react';
+import MainPage from '../page/MainPage.jsx';
 import "./Index.css";
 
 function CompanyCard( props ){
@@ -7,23 +8,23 @@ function CompanyCard( props ){
 
     return(
         <div>
-            
-            <div className="BackGroundColourCompanyCard">
 
-                <img  src={  logo } style={{ height: height, width: width, marginTop: '7px', marginLeft: '10px'}}/>
+                <div className="BackGroundColourCompanyCard">
 
-                <div className="RightCompanyCard">
+                    <img  src={  logo } style={{ height: height, width: width, marginTop: '7px', marginLeft: '10px'}}/>
 
-                    <h1 >{jobTitle}</h1>
+                    <div className="RightCompanyCard">
 
-                    <h2>{company}</h2>
+                        <h1 >{jobTitle}</h1>
 
-                    <h3>{ location }</h3>
+                        <h2>{company}</h2>
 
-                    { props.children }
+                        <h3>{ location }</h3>
+
+                        { props.children }
+                    </div>
+                    
                 </div>
-                   
-            </div>
         </div>
     );
 }

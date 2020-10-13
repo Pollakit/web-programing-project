@@ -58,7 +58,12 @@ function DroupdownMenu( props ){
     
     return(
         <div className = "dropdown">
-            { props.dropItems.map( ( item ) => <DropdowItem> { item } </DropdowItem>) }
+            { props.dropItems.map( ( item ) => <span style={{display: 'flex', alignItems : 'center'
+}}
+                                                ><input type="checkbox" />
+                                                     <DropdowItem> { item } </DropdowItem>
+                                                </span>) }
+
         </div>
     );
 }

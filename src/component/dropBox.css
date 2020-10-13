@@ -75,7 +75,8 @@
     margin-left: -66px;
     border-radius: 20px;
     background-color: white;
-    border-color: gray;
+    border-color: black;
+    Box-shadow:0 10px 20px rgba(0,0,0,0.30), 0 6px 6px rgba(0, 0, 0, 0.23);
   }
   
   

@@ -8,7 +8,7 @@
 }
 
 .FindJobContainer{
-	margin-top: 9px;
+	margin-top: 15px;
 	display: flex;
 	justify-content: center;
 }
@@ -17,7 +17,7 @@
 	display: flex;
 	flex-direction: column; 
 	background-color: #FEE2D7;
-	width: 50%;
+	width: 25%;
 }
 
 .FindJobItemRight{ 
@@ -37,6 +37,7 @@
 	width: 250px;
 	height: 10px;
 	margin: 80px 0;
+	margin-left: 3%;
 }
 
 .ScrollerStyleLeft{
@@ -55,7 +56,7 @@
 	width: 100%;
 	overflow: auto;
 	border: 1px solid #ccc;
-    font: 16px/26px Georgia, Garamond, Serif;
+	font: 16px/26px Georgia, Garamond, Serif;
 }
 
 .SearchBarContainerMain{
@@ -67,7 +68,6 @@
 .MatchJobContainer{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: flex-start;
 	flex-basis: 100%;
 	flex-wrap: wrap;
@@ -129,4 +129,23 @@
 .MainPageButtonLeft{
 	margin-left: 60%;
 	color: #FFC6AF;
+}
+
+.CompanyCardFindJobPageContainer2{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	background-color: #FFC6AF;
+}
+
+.MatchJobContainer{
+	display: flex;
+	flex-wrap: wrap;
+	scrollbar-width: thin;
+	height: 1000px;
+	width: 500px;
+	margin-left: 30%;
+	overflow: auto;
+	border: 1px solid #ccc;
+	font: 16px/26px Georgia, Garamond, Serif;
 }
