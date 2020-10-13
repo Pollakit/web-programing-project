@@ -83,8 +83,6 @@ class FindJobPage extends Component {
 
                 <div className = "ScrollerStyleLeft">
 
-                    
-
                     { this.state.CompanyCard.map( item => 
                       <div className="CompanyCardFindJobPageContainer"> 
                         <CompanyCard 

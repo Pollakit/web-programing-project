@@ -51,7 +51,7 @@
 }
 
 .ScrollerStyRight{
-	height: 480px;
+	height: 100%;
 	width: 100%;
 	overflow: auto;
 	border: 1px solid #ccc;
@@ -71,7 +71,7 @@
 	align-items: flex-start;
 	flex-basis: 100%;
 	flex-wrap: wrap;
-	height: 1000px;
+	height: 500px;
 	width: 45%;
 	margin-left: 25%;
 	margin-top: 30px;
