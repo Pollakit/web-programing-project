@@ -72,7 +72,7 @@ label {
   font-size: 1.5em;
   margin: 20px 10px 5px 20px;
   display: inline-block;
-  width: 200px;
+  min-width: 200px;
 }
 
 .input {
@@ -101,13 +101,26 @@ textarea.input {
   display: flex;
   /* flex-basis: 100%; */
   flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
 }
 
 .dynamic-input-container-parent {
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .addButton {
   border-radius: 15px;
+  box-sizing: border-box;
+}
+
+span.tag {
+  padding: 7px;
+  margin: 12px;
+  background-color: white;
+}
+
+input.tagInput {
+  margin-right: 5px;
 }

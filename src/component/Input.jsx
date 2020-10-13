@@ -4,8 +4,7 @@ class Input extends React.Component {
     constructor(props) {
         super(props);
         const inputElement = <input type="text" onKeyDown={this._handleEnter.bind(this) }
-                            onChange={this._handleOnChange.bind(this)}/>
-        const textElement = <p></p>
+                            onChange={this._handleOnChange.bind(this)} className="tagInput" onBlur={this._handleOnBlur.bind(this)} />
         
         this.state = {
             element: inputElement,
@@ -17,10 +16,20 @@ class Input extends React.Component {
     }
 
     _handleEnter = (e) => {
-        if (e.key === 'Enter') {
-          console.log(this.state.value);
+        if (e.key === 'Enter' && this.state.value != '') {
+            console.log(this.state.value);
+            const textElement = <span className={"tag"} onDoubleClick={this._handleDoubleClick.bind(this)}>{this.state.value}</span>
+            this.setState({
+                element: textElement
+            })
         }
     
+    }
+
+    _handleDoubleClick = (e) => {
+        const inputElement = <input type="text" onKeyDown={this._handleEnter.bind(this) }
+                            onChange={this._handleOnChange.bind(this)} className="tagInput" value={this.state.value}/>
+        this.setState({element: inputElement});
     }
 
     _handleOnChange = (e) => {
@@ -29,6 +38,15 @@ class Input extends React.Component {
         });
         console.log("State: " + this.state.value);
     }
-  }
 
-  export default Input;
+    _handleOnBlur = (e) => {
+        if (this.state.value != "") {
+            const textElement = <span className={"tag"} onDoubleClick={this._handleDoubleClick.bind(this)}>{this.state.value}</span>
+            this.setState({
+                element: textElement
+            })
+        }
+    }
+}
+
+export default Input;
