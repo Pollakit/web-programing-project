@@ -43,9 +43,11 @@ class CreateJobPage extends Component {
             ></ButtonWithIcon>
           </GreyBar>
         </div>
+
         <h1 className="standard-font-style align-text-center temp-font-size">
           Company Profile
         </h1>
+
         <ProfileContainer upper={true}>
           <DynamicForm inputs={jobDetails}></DynamicForm>
         </ProfileContainer>
@@ -53,6 +55,7 @@ class CreateJobPage extends Component {
         <DynamicForm inputs={companyDescriptionField}></DynamicForm>
         </ProfileContainer>
         <ResponsiveStandardButton text={"SAVE"}></ResponsiveStandardButton>
+        
       </React.Fragment>
     );
   }
