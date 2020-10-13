@@ -2,14 +2,13 @@ import React, { Component } from "react";
 import Header from "../../component/Header.jsx";
 import ButtonWithIcon from "../../component/ButtonWithIcon.jsx";
 import GreyBar from "../../component/GreyBar.jsx";
-import share_image from "../../image/share-post.png";
 import ProfileContainer from "../../component/ProfileContainer.jsx";
 import DynamicForm from "../../component/DynamicForm.jsx";
 import DynamicInput from "../../component/DynamicInput.jsx";
 import Button from "../../component/Button.jsx";
+import share_image from "../../image/share-post.png";
+import user_image from "../../image/user.png";
 import "./CreateJobPage.css";
-
-
 
 class CreateJobPage extends Component {
   render() {
@@ -32,7 +31,11 @@ class CreateJobPage extends Component {
         <div>
           <GreyBar>
             <ButtonWithIcon
-              text={"job posted"}
+              text={"Profile"}
+              imageUrl={user_image}
+            ></ButtonWithIcon>
+            <ButtonWithIcon
+              text={"Job posted"}
               imageUrl={share_image}
             ></ButtonWithIcon>
           </GreyBar>
