@@ -62,3 +62,22 @@
   border-style: solid;
   border-color: #ffc6af;
 }
+
+.BackGroundColourCompanyCard{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.RightCompanyCard{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-top: -3px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 0.5vw;
+}
+
