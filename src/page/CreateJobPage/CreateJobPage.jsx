@@ -51,11 +51,12 @@ class CreateJobPage extends Component {
         <ProfileContainer upper={true}>
           <DynamicForm inputs={jobDetails}></DynamicForm>
         </ProfileContainer>
+
         <ProfileContainer upper={false}>
-        <DynamicForm inputs={companyDescriptionField}></DynamicForm>
+          <DynamicForm inputs={companyDescriptionField}></DynamicForm>
         </ProfileContainer>
         <ResponsiveStandardButton text={"SAVE"}></ResponsiveStandardButton>
-        
+
       </React.Fragment>
     );
   }
