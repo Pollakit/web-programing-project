@@ -19,6 +19,8 @@ function CompanyCard( props ){
                     <h2>{company}</h2>
 
                     <h3>{ location }</h3>
+
+                    { props.children }
                 </div>
                    
             </div>
