@@ -99,6 +99,8 @@ textarea.input {
 
 .dynamic-input-container {
   display: flex;
+  /* flex-basis: 100%; */
+  flex-wrap: wrap;
 }
 
 .dynamic-input-container-parent {
@@ -107,5 +109,5 @@ textarea.input {
 }
 
 .addButton {
-  border-radius: 8px;
+  border-radius: 15px;
 }
