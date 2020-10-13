@@ -26,7 +26,7 @@ class Input extends React.Component {
         console.log("Value: " + value);
         
         this.setState({
-            value: e.target.valu
+            value: e.target.value
         });
         console.log("State: " + this.state.value);
     }
