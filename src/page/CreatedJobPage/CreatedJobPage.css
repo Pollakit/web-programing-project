@@ -131,11 +131,11 @@ input.tagInput {
   margin: 0 auto;
 }
 
-.button-container > button:nth-child(1) {
+.button-container > a > button:nth-child(1) {
   margin-right: 75px;
 }
 
-.button-container > button:nth-child(2) {
+.button-container > a > button:nth-child(2) {
   right: 0;
 }
 

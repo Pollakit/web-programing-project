@@ -8,6 +8,8 @@ import DynamicInput from "../../component/DynamicInput.jsx";
 import Button from "../../component/Button.jsx";
 import share_image from "../../image/share-post.png";
 import user_image from "../../image/user.png";
+import Router from '../../routes/Router';
+import { Link, NavLink } from 'react-router-dom';
 import "./CreateJobPage.css";
 
 class CreateJobPage extends Component {
@@ -50,7 +52,9 @@ class CreateJobPage extends Component {
           <DynamicInput tag={"Tag"}/>
         </ProfileContainer>
         <div className="button-container">
+          <Link to="/">
           <Button name="Create" size={[52, 435]} textSize={29}/>
+          </Link>
           <Button name="Cancel" size={[52, 353]} textSize={29}/>
         </div>
       </React.Fragment>

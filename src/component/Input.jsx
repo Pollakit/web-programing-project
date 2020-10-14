@@ -11,6 +11,7 @@ class Input extends React.Component {
             value: '',
         }
     }
+    
     render() {
       return (this.state.element)
     }
