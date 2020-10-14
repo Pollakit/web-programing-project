@@ -8,11 +8,9 @@ import DynamicInput from "../../component/DynamicInput.jsx";
 import Button from "../../component/Button.jsx";
 import share_image from "../../image/share-post.png";
 import user_image from "../../image/user.png";
-import Router from '../../routes/Router';
-import { Link, NavLink } from 'react-router-dom';
-import "./CreateJobPage.css";
+import "./EditJobPage.css";
 
-class CreateJobPage extends Component {
+class EditJobPage extends Component {
   render() {
     let jobDetails = {
       inputLists: [
@@ -42,22 +40,17 @@ class CreateJobPage extends Component {
             ></ButtonWithIcon>
           </GreyBar>
         </div>
-
         <h1 className="standard-font-style align-text-center temp-font-size">
-          Create Job
+          Edit Job
         </h1>
-
         <ProfileContainer upper={true}>
           <DynamicForm inputs={jobDetails} />
         </ProfileContainer>
-
         <ProfileContainer upper={false}>
           <DynamicInput tag={"Tag"}/>
         </ProfileContainer>
         <div className="button-container">
-          <Link to="/">
-          <Button name="Create" size={[52, 435]} textSize={29}/>
-          </Link>
+          <Button name="Apply" size={[52, 435]} textSize={29}/>
           <Button name="Cancel" size={[52, 353]} textSize={29}/>
         </div>
       </React.Fragment>
@@ -65,4 +58,4 @@ class CreateJobPage extends Component {
   }
 }
 
-export default CreateJobPage;
+export default EditJobPage;

@@ -5,14 +5,21 @@
 [1010/210514.088:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 =======
 [1010/204728.119:ERROR:settings.cc(430)] Settings version is not 5
+<<<<<<< HEAD
 >>>>>>> 876e7b0af27e95f656e9a9ddc0fee5cbc7bd10bd
 <<<<<<< HEAD
 >>>>>>> fedd248d60a63bd0edd01f7bdc9ca6eba80787a0
 [1011/173945.109:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 =======
 [1011/200259.060:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+<<<<<<< Updated upstream
 >>>>>>> 2a4b92a37c19f77b781d11cb65086fc643d50611
 [1013/085302.902:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1013/144226.959:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1013/184101.493:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1013/235245.828:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+=======
+=======
+[1014/122051.739:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+>>>>>>> CreateJobPage
+>>>>>>> Stashed changes
