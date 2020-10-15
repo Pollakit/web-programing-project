@@ -21,15 +21,21 @@ class CreatedJobPage extends Component {
         />
         <div>
           <GreyBar>
-            <ButtonWithIcon
-              text={"Profile"}
-              imageUrl={user_image}
-            ></ButtonWithIcon>
+            <a href="./company">
+              <ButtonWithIcon
+                text={"Profile"}
+                imageUrl={user_image}
+              ></ButtonWithIcon>
+            </a>  
+           
           </GreyBar>
         </div>
+         
         <DynamicProfileContainer>
-          <CreatedProfileContainer imageUrl={user_image} position={"Associate Business Analyst"}
+          <a href="./editjobPage" style={{color:"black"}}>
+            <CreatedProfileContainer imageUrl={user_image} position={"Associate Business Analyst"}
                                     company={"Shopee"} location={"Bangkok, Bangkok city Thailand"}/>
+          </a>
           <CreatedProfileContainer imageUrl={user_image} position={"Associate Business Analyst"}
                                     company={"Shopee"} location={"Bangkok, Bangkok city Thailand"}/><CreatedProfileContainer imageUrl={user_image} position={"Associate Business Analyst"}
                                     company={"Shopee"} location={"Bangkok, Bangkok city Thailand"}/><CreatedProfileContainer imageUrl={user_image} position={"Associate Business Analyst"}

@@ -11,6 +11,8 @@ import UserPage from '../page/UserPage';
 import MainPage from '../page/MainPage';
 import SignUpPage from '../page/SignUp/SignUpPage';
 import AfterSignUpPage from '../page/AfterSignUpPage/AfterSignUpPage'
+import LoginPage from '../page/LoginPage/LoginPage';
+import ForgotPasswordPage from '../page/ForgotPasswordPage/ForgotPasswordPage';
 
 export default function Router() {
     return (
@@ -26,6 +28,8 @@ export default function Router() {
                 <Route exact path="/editjobPage" component={EditJobPage} />
                 <Route exact path="/signUp" component={SignUpPage} />
                 <Route exact path="/afterSignUp" component={AfterSignUpPage} />
+                <Route exact path="/loginPage" component={LoginPage} />
+                <Route exact path="/forgotPasswordPage" component={ForgotPasswordPage} />
             </Switch>
         </BrowserRouter>
     )

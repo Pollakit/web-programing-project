@@ -3,6 +3,8 @@ import Header from '../component/Header.jsx';
 import GreyBar from '../component/GreyBar.jsx';
 import ButtonWithIcon from '../component/ButtonWithIcon.jsx';
 import Button from '../component/Button.jsx';
+import ProfileContainer from "../component/ProfileContainer.jsx";
+import DynamicInput from "../component/DynamicInput.jsx";
 
 import Search from '../image/search.png';
 import SharePost from '../image/share-post.png';
@@ -24,15 +26,19 @@ function UserPage(){
             <Header text ={"Login"} isDisplaySignUp={ false } isDisplayRightButton={ false }/>
 
             <GreyBar>
-                <ButtonWithIcon
-                    text={"find job"}
-                    imageUrl={Search}
-                ></ButtonWithIcon>
+                <a href="./findJobPage">
+                    <ButtonWithIcon
+                        text={"find job"}
+                        imageUrl={Search}
+                    ></ButtonWithIcon>
+                </a>
 
-                <ButtonWithIcon
-                    text={"matched job"}
-                    imageUrl={SharePost}
-                ></ButtonWithIcon>
+                <a href="./matchJobPage">
+                    <ButtonWithIcon
+                        text={"matched job"}
+                        imageUrl={SharePost}
+                    ></ButtonWithIcon>
+                </a>
             </GreyBar>
 
             <div className="UserPageHeaderTextStyle">
@@ -43,7 +49,9 @@ function UserPage(){
                 <InputBox name={"Username:"} idName={'userNameinput'} marginLeft={"3%"}/>
                 <InputBox name={"Email:"} idName={'emailInput'} marginLeft={"11%"}/>
                 <InputBox name={"Password:"} idName={'passwordInput'} marginLeft={"4%"}/>
-                <h1>Tag:</h1>
+                
+                <DynamicInput tag={"Tag"}/>
+                
             </div>
 
             <div className="UserPageButtonContainer">

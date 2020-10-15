@@ -66,7 +66,7 @@
   
   .dropdown{
     position: absolute;
-    top: 245px;
+    top: 248px;
     width: 300px;
     transform: translateX( 45% );
     background-color: var( --bg );

@@ -4,6 +4,7 @@ import ButtonWithIcon from "../../component/ButtonWithIcon.jsx";
 import search_logo from "../../image/search.png";
 import GreyBar from "../../component/GreyBar.jsx";
 import share_image from "../../image/share-post.png";
+import createImg from "../../image/create.png";
 import ProfileContainer from "../../component/ProfileContainer.jsx";
 import ResponsiveStandardButton from "../../component/ResponsiveStandardButton.jsx";
 import DynamicForm from "../../component/DynamicForm.jsx";
@@ -43,10 +44,22 @@ class CompanyPage extends Component {
         />
         <div>
           <GreyBar>
-            <ButtonWithIcon
-              text={"job posted"}
-              imageUrl={share_image}
-            ></ButtonWithIcon>
+
+            <a href="./createdjob">
+              <ButtonWithIcon
+                text={"job posted"}
+                imageUrl={share_image}
+              ></ButtonWithIcon>
+            </a>
+
+            <a href="./createjob">
+              <ButtonWithIcon
+                text={"create job"}
+                imageUrl={createImg}
+              ></ButtonWithIcon>
+            </a>
+
+
           </GreyBar>
         </div>
         <h1 className="standard-font-style align-text-center temp-font-size">
@@ -58,6 +71,7 @@ class CompanyPage extends Component {
         <ProfileContainer upper={false}>
         <DynamicForm inputs={companyDescriptionField}></DynamicForm>
         </ProfileContainer>
+        
         <ResponsiveStandardButton text={"SAVE"}></ResponsiveStandardButton>
       </React.Fragment>
     );

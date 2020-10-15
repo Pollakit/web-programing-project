@@ -11,8 +11,8 @@ function MainPage(){
             <Header text ={"Login"} isDisplaySignUp={ true } isDisplayRightButton={true}/>
 
             <div className="MainPageTopContainer">
-                <div className="MainPageLeftItem">
-                    <h1 style={{fontSize: '45px'}}>Choose a job you love,</h1>
+                <div>
+                    <h1 style={{fontSize: '45px', textAlign: 'left'}}>Choose a job you love,</h1>
 
                     <h2 style={{fontSize: '30px'}}>and you will never have to work a day in your life.</h2>
                     <p style={{fontSize: '17px'}}>—Confucius</p>

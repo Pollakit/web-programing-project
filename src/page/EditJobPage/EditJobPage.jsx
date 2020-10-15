@@ -30,16 +30,19 @@ class EditJobPage extends Component {
         />
         <div>
           <GreyBar>
-            <ButtonWithIcon
-              text={"Profile"}
-              imageUrl={user_image}
-            ></ButtonWithIcon>
-            <ButtonWithIcon
-              text={"Job posted"}
-              imageUrl={share_image}
-            ></ButtonWithIcon>
+            <a href="./company">
+            <ButtonWithIcon text={"Profile"} imageUrl={user_image}></ButtonWithIcon>
+            </a>
+
+            <a href="./createdjob">
+              <ButtonWithIcon
+                text={"Job posted"}
+                imageUrl={share_image}
+              ></ButtonWithIcon>
+            </a>
           </GreyBar>
         </div>
+
         <h1 className="standard-font-style align-text-center temp-font-size">
           Edit Job
         </h1>

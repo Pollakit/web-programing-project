@@ -8,19 +8,18 @@ class SignUp extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                <Header
-                    text={"Login"}
-                    isDisplaySignUp={false}
-                    isDisplayRightButton={true}
-                />
-                <h1>Sign Up</h1>
+                <Header text={"Login"} isDisplaySignUp={false} isDisplayRightButton={true}/>
+
                 <div>
-                    <input type="email" placeholder="jane@example.com" className="email-input" required />
+                    <h1 className="SignUpTextAlligin">Sign Up</h1>
+                    
+                    <input type="email" placeholder="jane@example" className="email-input" required /> 
+                    
+                    <input type="password" className="email-input" required />
+
+                    <div className="SiginUpBtnCenter"><a href="/afterSignUp"><Button name="Sign Up" size={[52, 317]} textSize={26}/></a></div>
                 </div>
-                <input type="password" className="email-input" required />
-                <div className="align-text-center">
-                    <Button name="Sign Up" size={[52, 353]} textSize={29}/>
-                </div>
+
             </React.Fragment>
         );
     }

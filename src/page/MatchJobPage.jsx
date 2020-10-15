@@ -18,39 +18,47 @@ function MatchJobPage(){
             <Header text ={"Login"} isDisplaySignUp={ false } isDisplayRightButton={ false }/>
 
             <GreyBar>
-                <ButtonWithIcon
-                    text={"profile"}
-                    imageUrl={UseIcon}
-                ></ButtonWithIcon>
+                <a href="./userPage">
+                    <ButtonWithIcon
+                        text={"profile"}
+                        imageUrl={UseIcon}
+                    ></ButtonWithIcon>
+                </a>
             </GreyBar>
             
             <div className="MatchJobContainer">
 
                 <div style={{ margin: '30px 50px 50px 50px', height: '100px', backgroundColor:'white' }}>
+                    <a href="https://careers.shopee.co.th/jobs/" target="_blank" style={{color:"black"}}>
                         <CompanyCard3
                             logo = { ShoppeeLogo }
                             type = { 'AssoiateBusinessAnalyst' } 
                             company = { 'Shopee' }
                             location = { 'Bangkok,BangkokcityThailand' }
                         />
+                    </a>
                 </div>
 
                 <div style={{ margin: '-30px 50px 50px 50px', height: '100px', backgroundColor:'white' }}>
-                        <CompanyCard3
+                        <a href="https://career.linecorp.com/linecorp/career/list" target="_blank" style={{color:"black"}}>
+                            <CompanyCard3
                             logo = { LineLogo }
                             type = { 'AssoiateBusinessAnalyst' } 
                             company = { 'Line' }
                             location = { 'Bangkok,BangkokcityThailand' }
                         />
+                        </a>
                 </div>
 
                 <div style={{ margin: '-30px 50px 50px 50px', height: '100px', backgroundColor:'white' }}>
+                    <a href="https://careers.google.com/" target="_blank" style={{color:"black"}}>
                         <CompanyCard3
                             logo = { GoogleLogo }
                             type = { 'AssoiateBusinessAnalyst' } 
                             company = { 'Google' }
                             location = { 'Bangkok,BangkokcityThailand' }
                         />
+                    </a>
                 </div>
 
             </div>

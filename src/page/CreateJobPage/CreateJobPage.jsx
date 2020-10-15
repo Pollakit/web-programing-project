@@ -32,14 +32,19 @@ class CreateJobPage extends Component {
         />
         <div>
           <GreyBar>
-            <ButtonWithIcon
-              text={"Profile"}
-              imageUrl={user_image}
-            ></ButtonWithIcon>
-            <ButtonWithIcon
-              text={"Job posted"}
-              imageUrl={share_image}
-            ></ButtonWithIcon>
+            <a href="./company">
+              <ButtonWithIcon
+                text={"Profile"}
+                imageUrl={user_image}
+              ></ButtonWithIcon>
+            </a>
+            
+            <a href="./createdjob">
+              <ButtonWithIcon
+                text={"Job posted"}
+                imageUrl={share_image}
+              ></ButtonWithIcon>
+            </a>
           </GreyBar>
         </div>
 
@@ -55,7 +60,7 @@ class CreateJobPage extends Component {
           <DynamicInput tag={"Tag"}/>
         </ProfileContainer>
         <div className="button-container">
-          <Link to="/">
+          <Link to="/createdjob">
           <Button name="Create" size={[52, 435]} textSize={29}/>
           </Link>
           <Button name="Cancel" size={[52, 353]} textSize={29}/>

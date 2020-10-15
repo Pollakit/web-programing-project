@@ -14,10 +14,10 @@ class SignUp extends Component {
                     isDisplaySignUp={false}
                     isDisplayRightButton={false}
                 />
-                <h1>Sign Up As</h1>
-                <ResponsiveStandardButton text="Company" />
+                <h1 className="AfterSignUpTextAlligin">Sign Up As</h1>
+                <a href="./company"><ResponsiveStandardButton text="Company" /></a>
                 {/* <div className="vertical-spacer"></div> */}
-                <ResponsiveStandardButton text="Employee" />
+                <a href="./userPage"><ResponsiveStandardButton text="Employee" /></a>
             </React.Fragment>
         );
     }

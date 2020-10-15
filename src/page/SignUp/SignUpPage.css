@@ -1,8 +1,3 @@
-h1 {
-  text-align: center;
-  margin-top: 3em;
-}
-
 input.email-input {
   display: block;
   width: 25%;
@@ -23,4 +18,15 @@ input.email-input {
 
 .button-container {
   text-align: center;
+}
+
+.SiginUpBtnCenter{
+  display: flex;
+  justify-content: center;
+}
+
+.SignUpTextAlligin{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 3%;
 }

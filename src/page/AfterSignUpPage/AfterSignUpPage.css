@@ -1,3 +1,9 @@
 div > button.center-button {
   margin-top: 25px;
 }
+
+.AfterSignUpTextAlligin{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 3%;
+}

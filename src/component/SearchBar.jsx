@@ -12,7 +12,7 @@ class SearchBar extends Component {
         <span className="SearchBarContainer">
             <h1>Description</h1>
 
-            <input type="text" className="SearchBarStyle" />
+            <input type="text" placeholder="search job title or company" className="SearchBarStyle" />
 
             <Button name={ "Seacrh" } size={[40,120]} textSize={25} /> 
         </span>
