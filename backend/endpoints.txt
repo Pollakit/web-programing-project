@@ -1,0 +1,22 @@
+admin/
+
+api-auth/
+api/v1/dj-rest-auth/
+api/v1/dj-rest-auth/registration/
+
+
+api/employee/           GET
+api/employee/<int:pk>/  GET/POST/PUT/DELETE
+
+api/company/            GET
+api/company/<int:pk>/   GET/POST/PUT/DELETE
+
+api/forum/              GET
+api/forum/<int:pk>/     GET/POST/PUT/DELETE
+
+api/position/           GET
+api/position/<int:pk>/  GET/POST/PUT/DELETE
+
+api/post/               GET
+api/post/<forum>  (integer) 1.Engineer 2.Business 3.Design  GET
+api/post/<int:pk>/      GET/POST/PUT/DELETE
